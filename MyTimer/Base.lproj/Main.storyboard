@@ -54,10 +54,44 @@
                     <navigationItem key="navigationItem" id="9Wb-bn-7BY">
                         <barButtonItem key="rightBarButtonItem" title="秒数設定" id="8DK-Iu-S0D"/>
                     </navigationItem>
+                    <connections>
+                        <segue destination="Nc1-pc-gMN" kind="show" identifier="goSetting" id="x0s-qh-flZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1136.8" y="-564.46776611694156"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oB5-j9-xQz">
+            <objects>
+                <viewController id="Nc1-pc-gMN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k47-Yy-bn7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xEk-IW-98y">
+                                <rect key="frame" x="0.0" y="64" width="375" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A85-NF-3kZ">
+                                <rect key="frame" x="127" y="373.5" width="120" height="120"/>
+                                <state key="normal" image="btn_ decision"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xEk-IW-98y" firstAttribute="top" secondItem="3XZ-Xc-qyN" secondAttribute="top" id="H7f-OC-ETT"/>
+                            <constraint firstItem="A85-NF-3kZ" firstAttribute="centerX" secondItem="k47-Yy-bn7" secondAttribute="centerX" id="XrD-TK-Tdp"/>
+                            <constraint firstItem="xEk-IW-98y" firstAttribute="leading" secondItem="3XZ-Xc-qyN" secondAttribute="leading" id="sQB-ka-ntc"/>
+                            <constraint firstItem="A85-NF-3kZ" firstAttribute="centerY" secondItem="k47-Yy-bn7" secondAttribute="centerY" constant="100" id="t8U-D2-487"/>
+                            <constraint firstItem="xEk-IW-98y" firstAttribute="trailing" secondItem="3XZ-Xc-qyN" secondAttribute="trailing" id="ysA-Xo-6zD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3XZ-Xc-qyN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pg9-BV-DnU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2100" y="-564"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7yk-7v-WsP">
@@ -80,6 +114,7 @@
     </scenes>
     <resources>
         <image name="bg" width="750" height="1334"/>
+        <image name="btn_ decision" width="120" height="120"/>
         <image name="btn_start" width="140" height="140"/>
         <image name="btn_stop" width="140" height="140"/>
     </resources>
