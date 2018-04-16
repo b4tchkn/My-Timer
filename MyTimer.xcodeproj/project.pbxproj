@@ -12,6 +12,7 @@
 		781A8E832058ECCB007891A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 781A8E812058ECCB007891A2 /* Main.storyboard */; };
 		781A8E852058ECCB007891A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 781A8E842058ECCB007891A2 /* Assets.xcassets */; };
 		781A8E882058ECCB007891A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 781A8E862058ECCB007891A2 /* LaunchScreen.storyboard */; };
+		782E8CB32084D360000D8E7D /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782E8CB22084D360000D8E7D /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		781A8E842058ECCB007891A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		781A8E872058ECCB007891A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		781A8E892058ECCB007891A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		782E8CB22084D360000D8E7D /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				781A8E7D2058ECCB007891A2 /* AppDelegate.swift */,
 				781A8E7F2058ECCB007891A2 /* ViewController.swift */,
 				781A8E812058ECCB007891A2 /* Main.storyboard */,
+				782E8CB22084D360000D8E7D /* SettingViewController.swift */,
 				781A8E842058ECCB007891A2 /* Assets.xcassets */,
 				781A8E862058ECCB007891A2 /* LaunchScreen.storyboard */,
 				781A8E892058ECCB007891A2 /* Info.plist */,
@@ -138,6 +141,7 @@
 			files = (
 				781A8E802058ECCB007891A2 /* ViewController.swift in Sources */,
 				781A8E7E2058ECCB007891A2 /* AppDelegate.swift in Sources */,
+				782E8CB32084D360000D8E7D /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

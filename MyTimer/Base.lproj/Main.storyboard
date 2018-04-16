@@ -30,10 +30,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpL-Pb-rA4">
                                 <rect key="frame" x="37.5" y="363.5" width="140" height="140"/>
                                 <state key="normal" image="btn_start"/>
+                                <connections>
+                                    <action selector="startButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RAo-DR-5pa"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpQ-zi-l9T">
                                 <rect key="frame" x="197.5" y="363.5" width="140" height="140"/>
                                 <state key="normal" image="btn_stop"/>
+                                <connections>
+                                    <action selector="stopButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w16-F1-qHz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -52,9 +58,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="9Wb-bn-7BY">
-                        <barButtonItem key="rightBarButtonItem" title="秒数設定" id="8DK-Iu-S0D"/>
+                        <barButtonItem key="rightBarButtonItem" title="秒数設定" id="8DK-Iu-S0D">
+                            <connections>
+                                <action selector="settingButtonAction:" destination="BYZ-38-t0r" id="8qH-TR-rTW"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="countDownLabal" destination="V7c-CB-RIE" id="eA3-ZF-d9f"/>
                         <segue destination="Nc1-pc-gMN" kind="show" identifier="goSetting" id="x0s-qh-flZ"/>
                     </connections>
                 </viewController>
@@ -62,10 +73,10 @@
             </objects>
             <point key="canvasLocation" x="1136.8" y="-564.46776611694156"/>
         </scene>
-        <!--View Controller-->
+        <!--Setting View Controller-->
         <scene sceneID="oB5-j9-xQz">
             <objects>
-                <viewController id="Nc1-pc-gMN" sceneMemberID="viewController">
+                <viewController id="Nc1-pc-gMN" customClass="SettingViewController" customModule="MyTimer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k47-Yy-bn7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,6 +87,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A85-NF-3kZ">
                                 <rect key="frame" x="127" y="373.5" width="120" height="120"/>
                                 <state key="normal" image="btn_ decision"/>
+                                <connections>
+                                    <action selector="decisionButtonAction:" destination="Nc1-pc-gMN" eventType="touchUpInside" id="3w8-do-5q9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -88,6 +102,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3XZ-Xc-qyN"/>
                     </view>
+                    <connections>
+                        <outlet property="timeSettingPicker" destination="xEk-IW-98y" id="Rpj-PB-gLW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pg9-BV-DnU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
